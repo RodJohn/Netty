@@ -59,8 +59,25 @@ websocket
 	8Html5刷新页面 重新建立链接
 	
 
-```
+```	
+
+# protocobuf
+
+序列化反序列化的库 也叫做编码和解码
+
+RMI  
+	remote method invocation
+	远程方法调用
+	只适合java
 	
+client 
+server
+
+RPC
+	
+remote process invitation 
+	
+/	
 	
 	
 
