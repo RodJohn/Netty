@@ -120,6 +120,8 @@ Thrift是一款由Fackbook开发的可伸缩、跨语言的服务开发框架 �
 
 # gRPC
 
+protobuffer可以作为IDR和编码方式
+
 
 
  
