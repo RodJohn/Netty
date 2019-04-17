@@ -95,9 +95,29 @@ https://www.jianshu.com/p/6c9f90538efe
 
 
 # netty+procoBuffer
+
+使用
+
 netty原生支持procobuffer
 https://www.jianshu.com/p/6102cc52b8fe
 通过4个handle将数据进行编码和解码
+
+解码
+传递多种类型对象
+多种传输类型的处理方式
+自定义解析器
+oneof
+
+同步中间码
+client和server间同步protobuffer
+git subtree中间代码的管理
+打包传递到maven
+
+
+ 
+ 
+
+
 
 
 
