@@ -61,9 +61,7 @@ websocket
 
 ```	
 
-# protocobuf
-
-序列化反序列化的库 也叫做编码和解码
+# RPC
 
 RMI  
 	remote method invocation
@@ -74,10 +72,40 @@ client
 server
 
 RPC
-	
+
 remote process invitation 
-	
-/	
+	跨语言
+过程
+	定义接口
+	通过RPC编译器生成两端代码
+	两端引入代码
+
+RPC效率高
+通过序列化的方式传输快
+通过socket传输
+
+#  protocolbuf
+
+用于作为传输消息的载体
+序列化反序列化
+体积小速度快支持多种语言
+定义
+https://www.jianshu.com/p/6c9f90538efe
+生成文件 不要去修改
+
+
+# netty+procoBuffer
+netty原生支持procobuffer
+https://www.jianshu.com/p/6102cc52b8fe
+通过4个handle将数据进行编码和解码
+
+
+
+
+
+
+
+
 	
 	
 
