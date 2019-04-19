@@ -131,11 +131,86 @@ protobuffer可以作为IDR和编码方式
 
 
 
+没有路由
+
+
+# netty
+
+简单的封装
+
+EventLoopGroup
+事件循环组
+不断地轮询channel中的事件
+用一个线程
+
+register 
+	Future
+	Promise
+
+EventExcuteGroup
+next
+
+NioEventLoopGroup
+selectorProvider
+
+newChild
+newDefaultTHreadFactory
+
+线程的创建和执行分离
+Execute
+execute
+ThreadPerTaskExecute
+DirectExecute
+SerialExecute
+ExecuteService
+命令模式 委托模式
+	
+
+
+ServerBoostrap
+Boostrap
+
+ServerChannel
+
+ServerSocketChannel 
+是 netty定义的不是 javanio的
 
 
 
+NioServerSocketChannel
+use NIO selector based implementation to accept new connections.
+
+bind
+
+转发  工作
 
 
 	
 	
+# Future
 
+
+java utc Future
+
+A {@code Future} represents the result of an asynchronous
+{@code get} when the computation has completed, blocking if necessary until it is ready.
+
+isDone
+
+不知道什么时候该去调用get
+
+Future<V> 
+
+ Future<V> addListener(GenericFutureListener<? extends Future<? super V>> listener);
+ 
+ isSucces
+ 
+ sync
+ Waits for this future until it is done,
+ 
+ await
+ 
+ ChannelFuture
+ 
+ 
+ 
