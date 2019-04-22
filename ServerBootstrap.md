@@ -1,5 +1,6 @@
 
 
+
 # ServerBootstrap
 
 
@@ -16,18 +17,21 @@
     initChannel
     
   bind
+  
+    initAndRegister
+      channel = channelFactory.newChannel();
+      init(channel);
+        ChannelPipeline p = channel.pipeline();
+         p.addLast
+        
     
     
     
-# ReflectiveChannelFactory
+  sync
+  
+  
+  
 
-    public T newChannel() {
-        try {
-            return clazz.getConstructor().newInstance();
-        } catch (Throwable t) {
-            throw new ChannelException("Unable to create Channel from class " + clazz, t);
-        }
-    }
 
 
 
