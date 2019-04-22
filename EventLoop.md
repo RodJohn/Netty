@@ -1,4 +1,15 @@
 
+# EventLoopGroup
+
+ChannelFuture register(Channel channel);
+
+# SingleThreadEventLoop
+
+ register(new DefaultChannelPromise(channel, this));
+ 
+ promise.channel().unsafe().register(this, promise);
+
+
 # NioEventLoopGroup
 
   MultithreadEventExecutorGroup
