@@ -37,6 +37,13 @@ ServerChannel
   ServerChannel extends Channel
 
 
+AbstractChannel
+
+       unsafe = newUnsafe();
+       new NioSocketChannelUnsafe();
+       
+       
+
 Channel
 
   public interface Channel extends AttributeMap, ChannelOutboundInvoker, Comparable<Channel> {
