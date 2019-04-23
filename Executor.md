@@ -1,13 +1,15 @@
 
+
+
+
+
+
+
+
 # EventLoopGroup
 
 ChannelFuture register(Channel channel);
 
-# SingleThreadEventLoop
-
- register(new DefaultChannelPromise(channel, this));
- 
- promise.channel().unsafe().register(this, promise);
 
 
 # NioEventLoopGroup
@@ -26,16 +28,28 @@ ChannelFuture register(Channel channel);
       }
     };
 
+
+
+
 # NioEventLoop
 
 NioEventLoop extends SingleThreadEventLoop
   private Selector selector;
   void select(boolean oldWakenUp)
   public void register(final SelectableChannel ch, final int interestOps, final NioTask<?> task)
-  
+  ch.register(selector, interestOps, task);
+    
+ 
+ ## SingleThreadEventLoop
 
-SingleThreadEventLoop
-  Queue<Runnable> tailTasks
+
+Queue<Runnable> tailTasks
+
+ register(new DefaultChannelPromise(channel, this));
+ 
+ promise.channel().unsafe().register(this, promise);
+
+
 
 SingleThreadEventExecutor
 
