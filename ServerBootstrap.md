@@ -47,3 +47,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+# 关键节点
+
+initAndRegister
+channelFactory.newChannel
+init(channel);
+config().group().register(channel)
+ch.register(selector, interestOps, task);
+promise.channel().unsafe().register(this, promise);
+
+
+
+
+
+
