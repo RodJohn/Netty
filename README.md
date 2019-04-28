@@ -9,6 +9,8 @@
 张龙 精通并发与netty
 
 遇到源码
+高屋建瓴的讲解 
+适合于复习  而不利于第一次去理解源码
 http://svip.iocoder.cn/categories/Netty/
 
 https://zhuanlan.zhihu.com/p/63217085
